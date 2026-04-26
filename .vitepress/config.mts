@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
+import { giscusPlugin } from 'vitepress-plugin-giscus'
 
 const base = process.env.GITHUB_ACTIONS === 'true'
   ? '/vitepress-plugins-tests/'
@@ -18,7 +19,17 @@ export default defineConfig({
   srcDir: "docs",
   base,
   vite: {
-    plugins: [pagefindPlugin(), RssPlugin(RSS)],
+    plugins: [
+      pagefindPlugin(),
+      RssPlugin(RSS),
+      giscusPlugin({
+        repo: 'atqq/vitepress-plugins-tests',
+        repoId: 'R_kgDOSMM3jg',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOSMM3js4C7tBC',
+        mapping: 'pathname',
+      })
+    ],
   },
   title: "My Awesome Project",
   description: "A VitePress Site",
