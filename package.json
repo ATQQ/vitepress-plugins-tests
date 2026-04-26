@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "vitepress": "2.0.0-alpha.17"
   },
   "scripts": {
@@ -9,6 +10,7 @@
   },
   "dependencies": {
     "pagefind": "^1.5.2",
-    "vitepress-plugin-pagefind": "^0.4.19"
+    "vitepress-plugin-pagefind": "^0.4.19",
+    "vitepress-plugin-rss": "^0.4.3"
   }
 }

@@ -2,7 +2,7 @@
 
 ## 测试的插件
 * [vitepress-plugin-pagefind](https://www.npmjs.com/package/vitepress-plugin-pagefind)：基于 pagefind 实现的 `VitePress` 离线全文搜索支持插件
-  
+* [vitepress-plugin-rss](https://www.npmjs.com/package/vitepress-plugin-rss)：基于 feed 实现的 `VitePress` RSS 支持插件
 
 ## 使用
 ```sh
