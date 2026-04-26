@@ -32,6 +32,9 @@ importers:
       vitepress-plugin-giscus:
         specifier: ^0.1.0
         version: 0.1.0(vitepress@2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10))(vue@3.5.33)
+      vitepress-plugin-image-preview:
+        specifier: ^0.1.2
+        version: 0.1.2(vitepress@2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10))(vue@3.5.33)
       vitepress-plugin-pagefind:
         specifier: ^0.4.19
         version: 0.4.19(pagefind@1.5.2)(vitepress@2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10))(vue@3.5.33)
@@ -415,6 +418,11 @@ packages:
     resolution: {integrity: sha512-IojxFWMEJe0RQ7PQ3KXQsPIImNsbpPYpoZ+QUDrL8fAl/O27IX+LVLs74/UzEZy5uA2LD8Nz1AiwKr72vrkZQw==}
     cpu: [x64]
     os: [darwin]
+
+  '@pagefind/freebsd-x64@1.5.2':
+    resolution: {integrity: sha512-7EVzo9+0w+2cbe671BtMj10UlNo83I+HrLVLfRxO731svHRJKUfJ/mo05gU14pe9PCfpKNQT8FS3Xc/oDN6pOA==}
+    cpu: [x64]
+    os: [freebsd]
 
   '@pagefind/linux-arm64@1.5.2':
     resolution: {integrity: sha512-Ovt9+K35sqzn8H3ZMXGwls4TD/wMJuvRtShHIsmUQREmaxjrDEX7gHckRCrwYJ4XE1H1p6HkLz3wukrAnsfXQw==}
@@ -1110,6 +1118,11 @@ packages:
     peerDependencies:
       vitepress: ^1 || ^2
 
+  vitepress-plugin-image-preview@0.1.2:
+    resolution: {integrity: sha512-Ift88U0W+wAcpzA0gMLzshkPSUyNlVeU0ckAUnoI62APBDChV8PqbUveXhkNDRJnics4uC8UnO8i/ukIui66xA==}
+    peerDependencies:
+      vitepress: ^1 || ^2
+
   vitepress-plugin-pagefind@0.4.19:
     resolution: {integrity: sha512-o07g9H1ykmcT/Sh1ATRGlH9p/sVcnCC+KrWNN0r1gQk7e7VISerg4HsaSlB21GQdm2Cumtc6kmLhb97O0TEltA==}
     peerDependencies:
@@ -1382,6 +1395,9 @@ snapshots:
     optional: true
 
   '@pagefind/darwin-x64@1.5.2':
+    optional: true
+
+  '@pagefind/freebsd-x64@1.5.2':
     optional: true
 
   '@pagefind/linux-arm64@1.5.2':
@@ -1852,6 +1868,7 @@ snapshots:
     optionalDependencies:
       '@pagefind/darwin-arm64': 1.5.2
       '@pagefind/darwin-x64': 1.5.2
+      '@pagefind/freebsd-x64': 1.5.2
       '@pagefind/linux-arm64': 1.5.2
       '@pagefind/linux-x64': 1.5.2
       '@pagefind/windows-arm64': 1.5.2
@@ -2071,6 +2088,14 @@ snapshots:
   vitepress-plugin-giscus@0.1.0(vitepress@2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10))(vue@3.5.33):
     dependencies:
       '@giscus/vue': 3.1.1(vue@3.5.33)
+      '@vueuse/core': 14.2.1(vue@3.5.33)
+      javascript-stringify: 2.1.0
+      vitepress: 2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10)
+    transitivePeerDependencies:
+      - vue
+
+  vitepress-plugin-image-preview@0.1.2(vitepress@2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10))(vue@3.5.33):
+    dependencies:
       '@vueuse/core': 14.2.1(vue@3.5.33)
       javascript-stringify: 2.1.0
       vitepress: 2.0.0-alpha.17(@types/node@25.6.0)(postcss@8.5.10)

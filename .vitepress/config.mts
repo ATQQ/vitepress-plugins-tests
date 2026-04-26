@@ -6,6 +6,7 @@ import { back2topPlugin } from 'vitepress-plugin-back2top'
 import { La51Plugin } from 'vitepress-plugin-51la'
 import { AnnouncementPlugin } from 'vitepress-plugin-announcement'
 import { artalkPlugin } from 'vitepress-plugin-artalk'
+import { ImagePreviewPlugin } from 'vitepress-plugin-image-preview'
 
 const base = process.env.GITHUB_ACTIONS === 'true'
   ? '/vitepress-plugins-tests/'
@@ -24,6 +25,7 @@ export default defineConfig({
   base,
   vite: {
     plugins: [
+      ImagePreviewPlugin(),
       pagefindPlugin(),
       RssPlugin(RSS),
       // artalkPlugin({
