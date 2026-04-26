@@ -11,7 +11,7 @@ const base = process.env.GITHUB_ACTIONS === 'true'
   ? '/vitepress-plugins-tests/'
   : '/'
 
-const baseUrl = 'https://atqq.github.io/vitepress-plugins-tests'
+const baseUrl = 'https://atqq.github.io'
 const RSS: RSSOptions = {
   title: '粥里有勺糖',
   baseUrl,
